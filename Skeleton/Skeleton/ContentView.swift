@@ -53,6 +53,17 @@ struct Card: Identifiable {
     var title: String
     var subTitle: String
     var description: String
+    
+    
+    static let cardData: Card = .init(image: "WWDC 25",
+                                      title: "World Wide Developer Conference 2025",
+                                      subTitle: "From June 9th 2025",
+                                      description: "Be there for the reveal of the lastest Apple tools, frameworks and features. Learn to elevate your apps and games througth video sessions hosted by Apple engineers and designers.")
+    
+    static let mock: Card = .init(image: "WWDC 25",
+                                  title: "World Wide Developer Conference 2025",
+                                  subTitle: "From June 9th 2025",
+                                  description: "Be there for the reveal of the lastest Apple tools, frameworks and features. Learn to elevate your apps and games througth video sessions hosted by Apple engineers and designers.")
 }
 
 struct SomeCardView: View {
